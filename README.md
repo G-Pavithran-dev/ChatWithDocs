@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 
 4. **Configure API Key**
-Create a ```.env``` file in the root directory:
+- Create a ```.env``` file in the root directory:
 ```ini
 GOOGLE_GENAI_API_KEY=your_google_gemini_api_key_here
 ```
