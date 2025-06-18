@@ -47,18 +47,31 @@ git clone https://github.com/G-Pavithran-dev/ChatWithDocs.git
 cd ChatWithDocs
 ```
 
-2. **Install Requirements**
+2. **Create a Virtual Environment**
+
+- Option A : Using `venv` (Recommended for Python Environment)
+ ```bash
+python -m venv venv
+venv\Scripts\activate
+```
+- Option B : Using `Condo`
+```bash
+conda create --name chatwithdocs python=3.10 -y
+conda activate chatwithdocs
+```
+
+3. **Install Requirements**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Configure API Key**
+4. **Configure API Key**
 Create a ```.env``` file in the root directory:
 ```ini
 GOOGLE_GENAI_API_KEY=your_google_gemini_api_key_here
 ```
 
-4. **Launch the Application**
+5. **Launch the Application**
 - Run the notebook ```indexing.ipynb``` which reads files and creates index
 - Then, Run the notebook ```chat_bot.ipynb``` which contains the actual chat_bot logics
 
